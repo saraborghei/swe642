@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 150%;
+  font-size: 18px;
+  background-color: #006633;
+  border-color: #ffcc33;
+}
+
+/* Style the header */
+header {
+  line-height: 200%;
+  background-color: #006633;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  border: solid 5px;
+  color: #ffcc33;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffcc33;
+}
+
+nav li a {
+  height: 20%;
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+nav li.current {
+  background-color: #f1f1f1;
+  color: white;
+}
+
+.footermenu {
+  text-decoration: none;
+  float: left;
+}
+.footermenu:link    {color:white;}
+.footermenu:visited {color:brown;}
+.footermenu:hover   {color:darkblue;}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+section {
+  height: auto;
+  background-color: #ffcc33;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #006633;
+  padding: 10px;
+  text-align: center;
+  border: #ffcc33 solid 5px;
+  color: white;
+}
+
+.title {
+  font-size: 48px;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Borrowed from cs.gmu.edu */
+.url-block {
+  margin: 0 auto;
+  list-style: none;
+  -webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 3px  rgba(0,0,0,0.5);
+}
+
+.url-block li {
+  padding: .1em 1em;
+  list-style: disc inside;
+}
+
+.left-column {
+  float: left;
+  width: 80%;
+  padding: 5%;
+}
+
+.right-column {
+  float: left;
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+tr.subtitle {
+  color: #006633;
+  font-weight: bold;
+}
+
+.item {
+  font-size: 16px;
+}
+tr:nth-child(even) {
+  background: #f7e1b8;
+}
+tr:nth-child(odd) {
+  background: #FFF;
+}
+
+.element {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-3 {
+  width: 20%;
+}
+
+.box {
+  width: 100%;
+  border: 5px solid green;
+  padding: 10px;
+  margin: 5px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.right {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.clear {
+  clear:both;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.collapsible {
+  background-color: #d6e1d6;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  color: white;
+  background-color: #08551f;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+textarea {
+  max-width:95%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #006633;
+  border: none;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 4px 2px;
+}
+
+/* Responsive layout - stack */
+@media (max-width: 600px) {
+  nav, article, header {
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+  }
+}
